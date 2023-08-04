@@ -1,0 +1,108 @@
+\renewcommand{\contentsname}{\normalsize TABLE OF CONTENTS}
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill~}
+\setlength{\cftbeforetoctitleskip}{-18pt}
+\setlength{\cftaftertoctitleskip}{36pt}
+
+\setlength{\cftbeforechapskip}          {0pt}
+\setlength{\cftbeforesecskip}           {0pt}
+\setlength{\cftbeforesubsecskip}        {0pt}
+\setlength{\cftbeforesubsubsecskip}     {0pt}
+\setlength{\cftbeforeparaskip}          {0pt}
+
+\setlength{\cftchapindent}              {.25in}
+\setlength{\cftsecindent}               {.5in}
+\setlength{\cftsubsecindent}            {.75in}
+\setlength{\cftsubsubsecindent}         {1in}
+\setlength{\cftparaindent}              {0mm}
+\setlength{\cftsubparaindent}              {0mm}
+
+\setlength{\cftchapnumwidth}            {0em}
+\setlength{\cftsecnumwidth}             {0em}
+\setlength{\cftsubsecnumwidth}          {0em}
+\setlength{\cftsubsubsecnumwidth}       {0em}
+
+%% Indents
+\renewcommand{\cftchapaftersnumb}{\hspace{.25in}}
+\renewcommand{\cftsecaftersnumb}{\hspace{.25in}}
+\renewcommand{\cftsubsecaftersnumb}{\hspace{.5in}}
+\renewcommand{\cftsubsubsecaftersnumb}{\hspace{.75in}}
+
+%% Dotsep
+\renewcommand\cftdotsep{0.1}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+
+%% Chapter rearrangement
+\renewcommand{\cftchappresnum}{}
+\renewcommand{\cftchapaftersnum}{.~}
+\renewcommand{\cftchapfont}{\normalsize\MakeUppercase{}}
+\renewcommand{\cftchappagefont}{}
+
+%% Paragraph rearrangement
+\renewcommand{\cftparafont}{}
+\renewcommand{\cftparaleader}{~}
+\renewcommand{\cftparapagefont}{}
+
+\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{6}
+
+\makeatletter
+\let\old@l@paragraph\l@paragraph
+\renewcommand{\l@paragraph}[2]{\old@l@paragraph{#1}{}}
+\makeatother
+
+
+
+
+
+
+
+
+\let\origaddvspace\addvspace
+\renewcommand{\addvspace}[1]{}
+
+
+
+
+
+
+
+
+
+\renewcommand{\listtablename}{\normalsize LIST OF TABLES}
+\renewcommand{\cftlottitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill~}
+\setlength{\cftbeforelottitleskip}{-18pt}
+\setlength{\cftafterlottitleskip}{36pt}
+\renewcommand{\cfttabpresnum}{Table~}
+\setlength{\cftbeforetabskip}{0pt}
+\setlength{\cfttabindent}{0mm}
+\setlength{\cfttabnumwidth}{5.5em}
+
+
+
+
+
+
+
+
+
+\renewcommand{\listfigurename}{\normalsize LIST OF FIGURES}
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill~}
+\setlength{\cftbeforeloftitleskip}{-18pt}
+\setlength{\cftafterloftitleskip}{36pt}
+\renewcommand{\cftfigpresnum}{Figure~}
+\setlength{\cftbeforefigskip}{0pt}
+\setlength{\cftfigindent}{0mm}
+\setlength{\cftfignumwidth}{5.5em}
+
+
+
+
+
+
+

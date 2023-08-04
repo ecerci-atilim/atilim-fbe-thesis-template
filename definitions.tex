@@ -1,0 +1,39 @@
+
+%%% User definitions
+\def\thesisname{This is the thesis name and it is not essential to be in uppercase or lowercase}
+\def\thesisnameTR{THis is the thesis name translated in Turkish}
+\def\surname{Surname}
+\def\firstname{Name}
+\def\degreeshort{PhD} % MS, ARCH, or PhD
+\def\deptname{Electrical-Electronics Engineering} % The full name of the dept.
+\def\mainFOS{Electrical-Electronics Engineering} % The full name of the main field of study
+\def\deptnameTR{Elektrik-Elektronik Mühendisliği} % The full name of the dept. in Turkish
+\def\mainFOS{Elektrik-Elektronik Mühendisliği} % The full name of the main field of study in Turkish
+\def\thesisMonth{July} % The corresponding month of the thesis
+\def\thesisYear{2023} % The corresponding year of the thesis
+\def\thesisMonthTR{Temmuz} % The corresponding monthe of the thesis in Turkish
+\def\directortitlename{Prof. Dr. Name SURNAME} % The title and the name of the director
+\def\headofdepttitlename{Prof. Dr. Name SURNAME} % The title and the name of the head of the department
+\def\supervisorname{Assoc. Prof. Yaser DALVEREN} % The title and the name of the supervisor
+\def\cosupervisorname{Assoc. Prof. Enver ÇAVUŞ} % The title and the name of the co-supervisor
+\def\supervisornameTR{Doç. Dr. Yaser DALVEREN} % The title and the name of the supervisor
+\def\cosupervisornameTR{Doç. Dr. Enver ÇAVUŞ} % The title and the name of the co-supervisor
+\def\defensedate{\today} % Defense date in dd MMM, yyyy format
+\def\dedication{my wife,\\who has been my most profound inspiration.} % Dedication of this thesis
+
+\ifthenelse{\equal{\degreeshort}{MS}}
+    {\def\degreelong{Master of Science}
+     \def\degreeshortTR{Yüksek Lisans}}
+    {% else1
+    \ifthenelse{\equal{\degreeshort}{ARCH}}
+        {\def\degreelong{Architecture}
+         \def\degreeshortTR{Mimarlık}}
+        {% else2
+            \ifthenelse{\equal{\degreeshort}{PhD}}
+            {\def\degreelong{Doctor of Philosophy}
+             \def\degreeshortTR{Doktora}}
+            {% else3
+                \def\degreelong{PLEASE CHECK THE DEFINITION of degreeshort AND CORRECT IT}
+}}}
+\ifthenelse{\equal{\degreeshort}{ARCH}}{\def\aan{AN}}{\def\aan{A}}
+\def\namesurname{\firstname~\surname}

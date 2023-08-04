@@ -1,0 +1,56 @@
+
+%%% Main graphical rules and styling formats
+\titleformat{\chapter}[display]
+    {\bfseries\normalsize}
+    {\centering CHAPTER \thechapter}
+    {48pt}
+    {\centering\normalsize\uppercase}
+\titlespacing*{\chapter}{0pt}{-28pt}{48pt}
+
+\titleformat{\section}
+    {\bfseries\normalsize}
+    {\thesection.}
+    {10mm}
+    {\normalsize}
+\titlespacing*{\section}{0pt}{24pt}{12pt}
+
+\titleformat{\subsection}
+    {\bfseries\normalsize}
+    {\thesubsection.}
+    {10mm}
+    {\normalsize}
+\titlespacing*{\subsection}{0pt}{24pt}{12pt}
+
+\titleformat{\subsubsection}
+    {\bfseries\normalsize}
+    {\thesubsubsection.}
+    {10mm}
+    {\normalsize}
+\titlespacing*{\subsubsection}{0pt}{24pt}{12pt}
+
+\captionsetup[table]{labelsep=space, skip=12pt}
+\captionsetup[figure]{labelsep=space, skip=24pt}
+\DeclareCaptionFont{mysize}{\normalsize}
+\captionsetup{font=mysize}
+
+%%% Macros
+\newcommand{\signaturespace}[3]
+    {
+        \hfill\parbox[t][0pt]{60mm}
+        {\rule{#3}{.5pt}\\\centering #1\\#2}
+    }
+
+\newcommand{\cosignaturespace}[3]
+    {
+        \parbox[t][0pt]{60mm}
+        {\rule{#3}{.5pt}\\\centering #1\\Co-Supervisor}
+        \hfill
+        \parbox[t][0pt]{60mm}
+        {\rule{#3}{.5pt}\\\centering #2\\Supervisor}
+    }
+
+\newcommand{\addmember}[4]
+    {
+        \vspace{12pt}
+        #1\\#2 \hfill \rule{#4}{.5pt}\\#3
+    }

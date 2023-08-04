@@ -1,0 +1,113 @@
+%%% Nomenclature items
+\renewcommand{\nompreamble}{\vspace*{-10mm}}
+\renewcommand\nomgroup[1]{%
+\vspace{12pt}
+  \item[\bfseries
+  \ifstrequal{#1}{A}{Roman Letter Symbols}{%
+  \ifstrequal{#1}{B}{Greek Letter Symbols}{%
+  \ifstrequal{#1}{C}{Acronyms}{}}}%
+]}
+\renewcommand{\nomname}{\vspace{6pt}\centering\normalsize LIST OF SYMBOLS/ABBREVIATIONS\vspace{-20mm}\vspace{48pt}}
+
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+\makenomenclature
+
+\setlength{\nomitemsep}{-\parsep}
+%% Items in group A
+\nomenclature[A]{$q$}{Finite Field Order}
+\nomenclature[A]{$GF(q)$}{Finite Field of Order $q$}
+\nomenclature[A]{$p$}{Prime Order of Base Finite Field}
+\nomenclature[A]{$m$}{Finite Field Extension Factor}
+\nomenclature[A]{$T$}{Faster-than-Nyquist Sampling Period
+    \nomunit{\si{\second}}}
+\nomenclature[A]{$T_0$}{Nyquist Sampling Period
+    \nomunit{\si{\second}}}
+\nomenclature[A]{$E_s$}{Symbol Energy
+    \nomunit{\si{\joule}}}
+\nomenclature[A]{$N_0$}{Noise Power Spectral Density
+    \nomunit{\si{\watt\per\hertz}}}
+\nomenclature[A]{$P_s$}{Signal Power
+    \nomunit{\si{\watt}}}
+\nomenclature[A]{$d_H$}{Hamming Distance}
+\nomenclature[A]{$d_{min}$}{Minimum Hamming Distance}
+\nomenclature[A]{$z_i$}{Result of the $i$th Syndrome}
+\nomenclature[A]{$K_H$}{Message Vector Length}
+\nomenclature[A]{$M_H$}{Parity Vector Length}
+\nomenclature[A]{$N_H$}{Encoded Message Vector Length}
+\nomenclature[A]{$H$}{Parity Check Matrix}
+\nomenclature[A]{$G$}{Intersymbol Interference Matrix}
+\nomenclature[A]{$E_b$}{Bit Energy
+    \nomunit{\si{\joule}}}
+\nomenclature[A$L$]{$\mathcal{L}$}{Configuration}
+\nomenclature[A]{$S_C$}{Configuration Set}
+\nomenclature[A]{$W_n$}{$n$-Dimensional Hadamard Matrix}
+\nomenclature[A]{$n_m$}{Extended Min-Sum Truncation Size}
+\nomenclature[A]{$n_b$}{Bubble Size}
+\nomenclature[A]{$R$}{Code Rate}
+\nomenclature[A]{$d_c$}{Check Node Depth}
+\nomenclature[A]{$d_v$}{Variable Node Depth}
+\nomenclature[A$Nm$]{$\mathcal{N}_m$}{Indices Connected to $m$th Check}
+\nomenclature[A$Mn$]{$\mathcal{M}_n$}{Indices Connected to $n$th Variable}
+
+%% Items in group B
+\nomenclature[B$a$]{$\alpha$}{Primitive Element of Finite Field}
+\nomenclature[B$b$]{$\beta$}{Roll-off Factor}
+\nomenclature[B$c$]{$\gamma_A$}{Scalar Representing Neglected Likelihoods}
+\nomenclature[B$l$]{$\lambda$}{Log-Likelihood Ratio}
+\nomenclature[B$Os$]{$\Omega_s$}{Sampling Frequency
+    \nomunit{\hspace{1mm}\si{\radian\per\second}}}
+\nomenclature[B$On$]{$\Omega_N$}{Nyquist Frequency
+    \nomunit{\si{\radian\per\second}}}
+\nomenclature[B$w$]{$\phi$}{Offset of Min-Sum Approximation}
+\nomenclature[B$s1$]{$\sigma$}{Noise Standard Deviation}
+\nomenclature[B$s2$]{$\sigma^2$}{Noise Variance}
+\nomenclature[B$t$]{$\tau$}{Time Acceleration Parameter}
+\nomenclature[B$x$]{$\xi$}{Offset of Extended Min-Sum Algorithm}
+\nomenclature[B$x0$]{$\xi_0$}{Initial Offset of Extended Min-Sum Algorithm}
+
+%% Items in group C
+\nomenclature[C]{AND}{Logical AND Operation}
+\nomenclature[C]{APP}{A Posteriori Probability}
+\nomenclature[C]{AWGN}{Additive White Gaussian Noise}
+\nomenclature[C]{BCJR}{Bahl, Cocke, Jelinek and Raviv}
+\nomenclature[C]{BER}{Bit Error Rate}
+\nomenclature[C]{bit}{Binary Digit}
+\nomenclature[C]{BP}{Belief Propagation}
+\nomenclature[C]{BPSK}{Binary Phase Shift Keying}
+\nomenclature[C]{BSC}{Binary Symmetric Channel}
+\nomenclature[C]{C2V}{Check-to-Variable}
+\nomenclature[C]{CD-ROM}{Compact Disc Read Only Memory}
+\nomenclature[C]{ECC}{Error Correction Code}
+\nomenclature[C]{ECN}{Elementary Check Node}
+\nomenclature[C]{EMS}{Extended Min-Sum}
+\nomenclature[C]{FB}{Forward-Backward}
+\nomenclature[C]{FFT}{Fast Fourier Transform}
+\nomenclature[C]{FTN}{Faster-than-Nyquist}
+\nomenclature[C]{FPGA}{Field-Programmable Gate Array}
+\nomenclature[C]{IFFT}{Inverse Fast Fourier Transform}
+\nomenclature[C]{ISI}{Intersymbol Interference}
+\nomenclature[C]{LDPC}{Low Density Parity Check}
+\nomenclature[C]{LDR}{Log-Density Ratio}
+\nomenclature[C]{LLR}{Log-Likelihood Ratio}
+\nomenclature[C]{LUT}{Look Up Table}
+\nomenclature[C]{M-BCJR}{\textit{M}-Algorithm Bahl, Cocke, Jelinek and Raviv}
+\nomenclature[C]{NB-LDPC}{Nonbinary Low Density Parity Check}
+\nomenclature[C]{NOO}{Number of Operations}
+\nomenclature[C]{PCE}{Parity Check Equation}
+\nomenclature[C]{PCM}{Parity Check Matrix}
+\nomenclature[C]{PN}{Permutation Node}
+\nomenclature[C]{PSD}{Power Spectral Density
+    \nomunit{\si{\watt\per\hertz}}}
+\nomenclature[C]{QPSK}{Quadrature Phase Shift Keying}
+\nomenclature[C]{RAM}{Random Access Memory}
+\nomenclature[C]{rRC}{Root-Raised-Cosine}
+\nomenclature[C]{SE}{Spectral Efficiency}
+\nomenclature[C]{SNR}{Signal-to-Noise Ratio
+    \nomunit{\si{\decibel}}}
+\nomenclature[C]{SPA}{Sum-Product Algorithm}
+\nomenclature[C]{SSSgb\textit{K}SE}{Symbol-by-Symbol with go-back-\textit{K} Sequence Estimator}
+\nomenclature[C]{SSSSE}{Successive Symbol-by-Symbol Sequence Estimator}
+\nomenclature[C]{V2C}{Variable-to-Check}
+\nomenclature[C]{WER}{Word Error Rate}
+\nomenclature[C]{XOR}{Logical Exclusive OR Operation}
